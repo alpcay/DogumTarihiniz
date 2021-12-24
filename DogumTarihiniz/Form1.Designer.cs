@@ -40,7 +40,7 @@ namespace DogumTarihiniz
             // lblDogumTarihiniz
             // 
             this.lblDogumTarihiniz.AutoSize = true;
-            this.lblDogumTarihiniz.Location = new System.Drawing.Point(505, 25);
+            this.lblDogumTarihiniz.Location = new System.Drawing.Point(161, 58);
             this.lblDogumTarihiniz.Name = "lblDogumTarihiniz";
             this.lblDogumTarihiniz.Size = new System.Drawing.Size(168, 25);
             this.lblDogumTarihiniz.TabIndex = 0;
@@ -49,24 +49,25 @@ namespace DogumTarihiniz
             // 
             // dtpDogumTarihi
             // 
-            this.dtpDogumTarihi.Location = new System.Drawing.Point(485, 84);
+            this.dtpDogumTarihi.Location = new System.Drawing.Point(141, 117);
             this.dtpDogumTarihi.Name = "dtpDogumTarihi";
             this.dtpDogumTarihi.Size = new System.Drawing.Size(200, 31);
             this.dtpDogumTarihi.TabIndex = 1;
             // 
             // btnHesapla
             // 
-            this.btnHesapla.Location = new System.Drawing.Point(527, 157);
+            this.btnHesapla.Location = new System.Drawing.Point(183, 190);
             this.btnHesapla.Name = "btnHesapla";
             this.btnHesapla.Size = new System.Drawing.Size(118, 41);
             this.btnHesapla.TabIndex = 2;
             this.btnHesapla.Text = "Hesapla";
             this.btnHesapla.UseVisualStyleBackColor = true;
+            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
             // 
             // lblYas
             // 
             this.lblYas.AutoSize = true;
-            this.lblYas.Location = new System.Drawing.Point(439, 245);
+            this.lblYas.Location = new System.Drawing.Point(95, 278);
             this.lblYas.Name = "lblYas";
             this.lblYas.Size = new System.Drawing.Size(89, 25);
             this.lblYas.TabIndex = 3;
@@ -76,7 +77,7 @@ namespace DogumTarihiniz
             // lblGun
             // 
             this.lblGun.AutoSize = true;
-            this.lblGun.Location = new System.Drawing.Point(439, 299);
+            this.lblGun.Location = new System.Drawing.Point(95, 332);
             this.lblGun.Name = "lblGun";
             this.lblGun.Size = new System.Drawing.Size(176, 25);
             this.lblGun.TabIndex = 3;
@@ -85,7 +86,7 @@ namespace DogumTarihiniz
             // lblBurc
             // 
             this.lblBurc.AutoSize = true;
-            this.lblBurc.Location = new System.Drawing.Point(439, 353);
+            this.lblBurc.Location = new System.Drawing.Point(95, 386);
             this.lblBurc.Name = "lblBurc";
             this.lblBurc.Size = new System.Drawing.Size(109, 25);
             this.lblBurc.TabIndex = 3;
@@ -95,15 +96,17 @@ namespace DogumTarihiniz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 848);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(660, 650);
             this.Controls.Add(this.lblBurc);
             this.Controls.Add(this.lblGun);
             this.Controls.Add(this.lblYas);
             this.Controls.Add(this.btnHesapla);
             this.Controls.Add(this.dtpDogumTarihi);
             this.Controls.Add(this.lblDogumTarihiniz);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Yaş Hesapla";
             this.ResumeLayout(false);
             this.PerformLayout();
 
